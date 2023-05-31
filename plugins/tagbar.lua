@@ -7,7 +7,7 @@ return {
   cmd = { "TagbarToggle" },
   keys = {
     {
-      "<leader><F8>",
+      "<F8>",
       -- "<cmd>:TagbarToggle :TagbarOpenAutoClose<CR>",
       "<cmd>:TagbarToggle<CR>",
       desc = "Show Tags",
