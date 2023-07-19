@@ -38,6 +38,7 @@ return {
     ["<leader>p"] = { ":cp<CR>", desc = "QuickFix Previous" },
     ["<Tab><Tab>"] = { ":cclose<CR>", desc = "close quickfix", },
     ["<leader><Tab>"] = { ":copen<CR>", desc = "open quickfix", },
+    ["<leader><F2>"] = { ":LspStop<CR>", desc = "Stop LSP", },
   },
   t = {
     -- setting a mapping to false will disable it
