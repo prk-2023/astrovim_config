@@ -18,6 +18,7 @@ return {
       end,
       desc = "Pick to close",
     },
+
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
@@ -36,14 +37,16 @@ return {
     ["<leader>r"] = { ":Gtags -s", desc = "Gtag references" },
     ["<leader>n"] = { ":cn<CR>", desc = "QuickFix Next" },
     ["<leader>p"] = { ":cp<CR>", desc = "QuickFix Previous" },
-    ["<Tab><Tab>"] = { ":cclose<CR>", desc = "close quickfix", },
-    ["<leader><Tab>"] = { ":copen<CR>", desc = "open quickfix", },
-    ["<leader><F2>"] = { ":LspStop<CR>", desc = "Stop LSP", },
+    -- ["<Tab><Tab>"] = { ":cclose<CR>", desc = "close quickfix" },
+    -- ["<leader><Tab>"] = { ":copen<CR>", desc = "open quickfix" },
+    ---
+    -- converting QuickFix from new vimrc 
+    -- nnoremap <expr> <Tab> empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen<CR>' : ':cclose<CR>'
+    ["<Tab>"] = { ":execute empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen' : ':cclose'<CR>", desc = "Toggle QuickFix" },
+    ["<leader><F2>"] = { ":LspStop<CR>", desc = "Stop LSP" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
 }
-
-

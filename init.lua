@@ -18,9 +18,10 @@ return {
   },
 
   -- Set colorscheme to use
-  -- colorscheme = "astrodark",
+  colorscheme = "astrodark",
+  -- colorscheme = "tokyonight",
   -- colorscheme = "catppuccin",
-  colorscheme = "gruvbox-baby",
+  -- colorscheme = "gruvbox-baby",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
