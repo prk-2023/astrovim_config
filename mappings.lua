@@ -40,10 +40,14 @@ return {
     -- ["<Tab><Tab>"] = { ":cclose<CR>", desc = "close quickfix" },
     -- ["<leader><Tab>"] = { ":copen<CR>", desc = "open quickfix" },
     ---
-    -- converting QuickFix from new vimrc 
+    -- converting QuickFix from new vimrc
     -- nnoremap <expr> <Tab> empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen<CR>' : ':cclose<CR>'
-    ["<Tab>"] = { ":execute empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen' : ':cclose'<CR>", desc = "Toggle QuickFix" },
+    ["<Tab>"] = {
+      ":execute empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen' : ':cclose'<CR>",
+      desc = "Toggle QuickFix",
+    },
     ["<leader><F2>"] = { ":LspStop<CR>", desc = "Stop LSP" },
+    ["<F3>"] = { ":ToggleTerm direction='horizontal'<CR>", desc = "horizontal terminal split" },
   },
   t = {
     -- setting a mapping to false will disable it
