@@ -22,7 +22,8 @@ return {
   -- colorscheme = "astrodark",
   -- colorscheme = "tokyonight",
   -- colorscheme = "catppuccin",
-  colorscheme = "gruvbox-baby",
+  -- colorscheme = "gruvbox-baby",
+  colorscheme = "onedark",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
