@@ -47,4 +47,10 @@ return {
     lazy = not vim.g.started_by_firenvim,
     build = function() vim.fn["firenvim#install"](0) end,
   },
+  {
+    "xero/miasma.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function() vim.cmd "colorscheme miasma" end,
+  },
 }
