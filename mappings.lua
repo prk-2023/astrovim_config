@@ -33,7 +33,7 @@ return {
     ["<leader>,"] = { ":GtagsCursor<CR>", desc = "Gtag Cursor" },
     ["<leader>x"] = { ":Gtags -x", desc = "Gtag -x" },
     ["<leader>s"] = { ":Gtags -s", desc = "Gtag -s" },
-    ["<leader>g"] = { ":Gtags -g", desc = "Gtag grep" },
+    ["<leader>G"] = { ":Gtags -g", desc = "Gtag grep" },
     ["<leader>r"] = { ":Gtags -s", desc = "Gtag references" },
     ["<leader>n"] = { ":cn<CR>", desc = "QuickFix Next" },
     ["<leader>p"] = { ":cp<CR>", desc = "QuickFix Previous" },
